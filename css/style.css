@@ -61,6 +61,15 @@
   background-color: #1D2D48;
 }
 
+.submit-btn {
+  background: #F52852;
+  border-radius: 0;
+  width: 100%;
+  border: 0;
+  color: #fff;
+  padding: 15px;
+}
+
 /* Calculator Body Styles */
 .section-title h2{
   font-weight: 700;
