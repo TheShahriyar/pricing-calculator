@@ -1,0 +1,399 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Main Container Wrapper Styles */
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 80px auto;
+  width: 100%;
+  max-width: 1140px;
+  align-items: flex-end;
+} */
+
+.page-wrapper {
+  margin: 150px 0;
+}
+
+.calculator-wrapper {
+  padding: 0px 15px;
+}
+
+.profile-wrapper {
+  width: 30%;
+  padding: 0px 15px;
+  display: none;
+}
+
+/* End of Main Container Wrapper Styles */
+
+/* Checkbox styling */
+.project-type h3 {
+  font-weight: 800;
+  font-size: 24px;
+  color: #2f2f2f;
+  margin-bottom: 40px;
+}
+
+.project-type .custom-checkbox {
+  margin-bottom: 30px;
+}
+
+.project-type .custom-control-label::before {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 0;
+}
+
+.project-type .custom-control-label::after {
+  top: .35rem;
+  left: -1.35rem;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  border-color: #1D2D48;
+  background-color: #1D2D48;
+}
+
+/* Calculator Body Styles */
+.section-title h2{
+  font-weight: 700;
+  color: #2f2f2f;
+  font-size: 54px;
+  margin-bottom: 3rem;
+}
+
+
+.calculator-type select {
+  width: 100%;
+  padding: 18px;
+  color: #4f555a;
+  border-radius: 4.5px;
+  background-color: #f3f7fb;
+  font-size: 18px;
+  border: 1px solid #f3f7fb;
+  outline: none;
+}
+
+.calculator-body {
+  background: #fff;
+  box-shadow: 0 0 20px #f1f1f1;
+  border-radius: 0 0 10px 10px;
+  display: none;
+  padding: 20px 30px;
+}
+
+.calculator-field-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.calculator-field h6 {
+  color: #b1b1b1;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+
+/* End of Calculator Body Styles */
+
+/* Radio Button Styles */
+.toggle-switch {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.toggle-switch input[type=radio] {
+  display: none;
+}
+
+.toggle-switch label {
+  cursor: pointer;
+  display: inline-block;
+  color: #b1b1b1;
+  font-size: 16px;
+}
+
+.toggle-track {
+  height: 40px;
+  width: 120px;
+  border: 1px solid #b1b1b1;
+  border-radius: 20px;
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 4px;
+  float: left;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+  z-index: 1;
+}
+
+.toggle-switch input[type=radio]:checked+label {
+  color: #fff !important;
+}
+
+.toggle-switch input[type=radio]:checked+label .toggle-track:before {
+  background: #1D2D48;
+}
+
+.toggle-switch input[type=radio]:checked+label .toggle-track:before {
+  left: 0;
+}
+
+.toggle-track:before {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+  display: inline-block;
+  content: '';
+  z-index: -1;
+}
+
+/* End of Radio Button Styles */
+
+
+/* Calculator Result */
+.calculator-answer {
+  padding: 20px 0;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.price-left,
+.price-right {
+  text-align: center;
+}
+
+.price-left p,
+.price-right p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: #F52852;
+  font-weight: bold;
+}
+
+.price-left h4,
+.price-right h4 {
+  font-size: 58px;
+  font-weight: 600;
+  color: #F52852;
+  line-height: 1.2;
+}
+
+.price-left h4  small,
+.price-right h4 span small {
+  font-size: 28px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* End of Calculator Result */
+
+/* Footer result */
+
+.footer-note {
+  padding: 20px 0;
+}
+
+.footer-note h5 {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.footer-ad img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.footer-ad h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+.footer-ad p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6d6d6d;
+}
+
+.footer-ad .btn-email {
+  background: #1D2D48;
+  color: #fff;
+  border-radius: 0;
+  font-size: 14px;
+  padding: 8px 30px;
+}
+
+/* End of Footer result */
+
+/* Profile wrapper */
+
+.profile-inner-wrapper {
+  box-shadow: 0 42px 64px 0 #e7e7ec;
+  background-color: #fff;
+  height: 100%;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.profile-image {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.profile-image img {
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.profile-content {
+  padding: 24px;
+}
+
+.profile-content h3 {
+  font-size: 24px;
+  color: #21212b;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  transition: all 0.4s;
+}
+
+.profile-content p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #8c8c8c;
+  margin-bottom: 20px;
+  font-weight: 400;
+  transition: all 0.4s;
+}
+
+.profile-content a {
+  font-size: 15px;
+  background-color: #04f;
+  border-radius: 100px;
+  font-weight: 700;
+  padding: 10px 22.5px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s;
+  line-height: 1.6;
+}
+
+/* End of Profile wrapper */
+
+@media (max-width:768px) {
+  .calculator-wrapper {
+    width: 100%;
+  }
+
+  .profile-wrapper {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .profile-inner-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .profile-inner-wrapper .profile-image {
+    width: 40%;
+  }
+
+  .profile-inner-wrapper .profile-content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+  }
+
+  .section-title h1 {
+    font-size: 36px;
+  }
+
+  .price-left h4,
+  .price-right h4 {
+    font-size: 30px;
+  }
+
+  .price-left h4 span,
+  .price-right h4 span {
+    font-size: 20px;
+  }
+
+  .profile-content h3 {
+    font-size: 20px;
+  }
+}
+
+
+@media (max-width:500px) {
+  .calculator-wrapper {
+    width: 100%;
+  }
+
+  .calculator-field {
+    width: 100%;
+  }
+
+  .profile-wrapper {
+    width: 100%;
+  }
+
+  .profile-inner-wrapper .profile-image {
+    width: 100%;
+  }
+
+  .profile-inner-wrapper .profile-content {
+    width: 100%;
+  }
+
+  .price-left,
+  .price-right {
+    width: 100%;
+  }
+
+  .section-title h1 {
+    font-size: 30px;
+  }
+
+  .price-left h4,
+  .price-right h4 {
+    font-size: 26px;
+  }
+
+  .price-left h4 span,
+  .price-right h4 span {
+    font-size: 18px;
+  }
+}
